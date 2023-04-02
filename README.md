@@ -2,9 +2,11 @@
 weather module for your polybar config
 
 # Set Up
-* Download jar (if not building from source)
-* Get yourself a free weather API token [https://openweathermap.org/](link)
-* Find your lon and lat
+* download jar (if not building from source)
+* get yourself a free weather API token [https://openweathermap.org/](link)
+* find your lon and lat
+* put built jar into polybar config
+* put weather.sh in script folder
 
 # Requirements (building from source)
 * JSoup
