@@ -1,7 +1,7 @@
 # weather-module
 weather module for your polybar config
 
-# Set Up
+# Set up
 * download jar (if not building from source)
 * get yourself a free openweathermap API token: [website](https://openweathermap.org/)
 * find your lon and lat
