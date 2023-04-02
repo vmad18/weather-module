@@ -1,6 +1,11 @@
 # weather-module
 weather module for your polybar config
 
+# Set Up
+* Download jar (if not building from source)
+* Get yourself a free weather API token [https://openweathermap.org/](link)
+* Find your lon and lat
+
 # Requirements (building from source)
 * JSoup
 * GSon
