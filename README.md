@@ -1,11 +1,10 @@
 # weather-module
 weather module for your polybar config
 
-# Set Up
-* Will Explain
-
-# Requirements 
-* Jauntium Java (free is short-term) 
+# Requirements (building from source)
+* JSoup
+* GSon
+* ~~ Jauntium Java (free is short-term) ~~
 
 # Example polybar config
 
@@ -14,7 +13,7 @@ weather module for your polybar config
 type = custom/script
 
 interval = 1
-exec = sh ~/.config/polybar/scripts/weather.sh feel
+exec = sh ~/.config/polybar/scripts/weather.sh <lon> <lat> <api_key> feel
 format = <label>
 format-padding = 0
 format-prefix-font = 15
@@ -28,7 +27,7 @@ format-prefix-foreground = ${colors.aqua}
 type = custom/script
 
 interval = 1
-exec = sh ~/.config/polybar/scripts/weather.sh temp
+exec = sh ~/.config/polybar/scripts/weather.sh <lon> <lat> <api_key> temp
 format-prefix-font = 15
 format = <label>
 format-padding = 1
@@ -39,7 +38,7 @@ format-foreground = ${colors.blue-gray}
 type = custom/script
 
 interval = 1
-exec = sh ~/.config/polybar/scripts/weather.sh humid
+exec = sh ~/.config/polybar/scripts/weather.sh <lon> <lat> <api_key> humid
 format-prefix-font = 15
 format = "<label>%"
 format-padding = 0
@@ -52,7 +51,7 @@ format-prefix-foreground = ${colors.indigo}
 type = custom/script
 
 interval = 1
-exec = sh ~/.config/polybar/scripts/weather.sh speed
+exec = sh ~/.config/polybar/scripts/weather.sh <lon> <lat> <api_key> speed
 format = <label>
 format-padding = 0
 format-prefix-font = 15
@@ -65,7 +64,7 @@ format-prefix-foreground = ${colors.indigo}
 type = custom/script
 
 interval = 1
-exec = sh ~/.config/polybar/scripts/weather.sh status
+exec = sh ~/.config/polybar/scripts/weather.sh <lon> <lat> <api_key> status
 format-font = 15
 format = "<label>"
 format-padding = 0
