@@ -1,3 +1,3 @@
 #!/bin/bash
 
-exec java -jar ~/IdeaProjects/WeatherModule/out/artifacts/WeatherModule_jar/WeatherModule.jar "$1"
+exec java -jar ~/.config/polybar/WeatherModule.jar "$1" "$2" "$3" "$4"

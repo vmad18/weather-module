@@ -1,23 +1,24 @@
 package me.v18.net
-import com.jaunt.*
 
-fun main(args: Array<String>): Unit{
+import org.jsoup.Jsoup
 
-    val web = Website("", "", "")
 
-    val ua = UserAgent()
+fun main(args: Array<String>): Unit {
 
-    val weather = Weather{
-        ua.visit(web.site)
-        ua.json
+    assert(args.size >= 4)
+
+    val web = Website(args[0], args[1], args[2])
+
+    val weather = Weather {
+        val parse: String = Jsoup.connect(web.site).ignoreContentType(true).execute().body()
+        parse.json_map
     }
 
-    assert(args.isNotEmpty())
-
-    when(args[0]){
+    when (args[3]) {
         "temp" -> println(weather.temp)
         "feel" -> println(weather.feel_temp)
         "humid" -> println(weather.humid)
         "speed" -> println(weather.wind_speed)
+        "status" -> println(weather.status)
     }
 }
