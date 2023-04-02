@@ -2,11 +2,10 @@
 weather module for your polybar config
 
 # Set Up
-* Provide 
+* ___ 
 
 # Requirements 
 * Jauntium Java (free is short-term) 
-* _
 
 # Example polybar config
 
