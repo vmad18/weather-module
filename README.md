@@ -9,7 +9,7 @@ weather module for your polybar config
 # Requirements (building from source)
 * JSoup
 * GSon
-* ~~ Jauntium Java (free is short-term) ~~
+* ~~Jauntium Java (free is short-term)~~
 
 # Example polybar config
 
