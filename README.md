@@ -2,7 +2,7 @@
 weather module for your polybar config
 
 # Set Up
-* ___ 
+* Will Explain
 
 # Requirements 
 * Jauntium Java (free is short-term) 
